@@ -1,27 +1,54 @@
+:root {
+  --left: -50px + 20vw;
+  --top: -30px + 40vh;
+}
+
 .App {
   text-align: center;
+  background-image: url("./sunset.jpeg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 50px; 
+  position: relative;
+  left: calc(var(--left));
+  top: calc(var(--top) + 10px);
+  display: block;
+}
+.linkedin {
+  font-family: "Quicksand";
+  position: absolute;
+  top: calc(var(--top) + 105px);
+  left: calc(var(--left) - 0px);
+  font-size: 18px;
+  display: block;
+}
+.github {
+  font-family: "Quicksand";
+  position: absolute;
+  top: calc(var(--top) + 105px);
+  left: calc(var(--left) + 100px);
+  font-size: 18px;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.resume {
+  font-family: "Quicksand";
+  position: absolute;
+  top: calc(var(--top) + 105px);
+  left: calc(var(--left) + 190px);
+  font-size: 18px;
+  display: block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.div {
+  position: absolute;
 }
 
 .App-link {
