@@ -28,7 +28,7 @@ function App() {
   }
   return (
     <div className="App">
-      <div className="div">
+      <div className="div" >
         <h1 className="header"> David Wang </h1>
 
         <a 
@@ -55,7 +55,7 @@ function App() {
 
         <a 
         className="resume" 
-        href={"David_Wang.pdf"}
+        href={"David_Wang_resume.pdf"}
         download
         onMouseEnter={handleEnter_R}
         onMouseLeave={handleLeave_R}

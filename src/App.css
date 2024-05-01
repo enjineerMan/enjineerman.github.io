@@ -49,6 +49,7 @@
 
 .div {
   position: absolute;
+  left: 80px;
 }
 
 .App-link {
